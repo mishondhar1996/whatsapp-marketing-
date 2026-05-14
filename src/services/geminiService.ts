@@ -6,17 +6,17 @@ export async function generateMessageVariations(baseMessage: string, count: numb
   if (!baseMessage) return [];
 
   const prompt = `
-    You are an expert Bangla marketing specialist and AI copywriting assistant for businesses in Bangladesh. 
+    You are an expert Bangla marketing specialist and AI copywriting assistant for "লাকী গোল্ড" (Lucky Gold) located at "লাকী প্লাজা, আগ্রাবাদ" (Lucky Plaza, Agrabad), Chittagong. 
     The user wants to send promotional messages via WhatsApp/SMS. 
     Your goal is to suggest ${count} unique variations of a base message to comply with anti-spam policies.
 
     Requirements for Variations:
     1. STRICTLY maintain the core offer and factual information.
-    2. Use natural, conversational, and professional Bangla.
-    3. Include at least one relevant emoji per variation.
-    4. At least one variation must be a COMPLETELY rephrased version (different starting/ending, different sentence rhythm) while keeping the same meaning.
-    5. Ensure all suggestions are distinct from each other to satisfy message policy requirements.
-    6. Tone: Polite, business-oriented, and engaging.
+    2. Always ensure the business name "লাকী গোল্ড" is clearly visible in the message.
+    3. Use natural, conversational, and professional Bangla.
+    4. Include at least one relevant emoji per variation.
+    5. At least one variation must be a COMPLETELY rephrased version.
+    6. Tone: Polite, business-oriented, and inviting.
 
     Base Message: "${baseMessage}"
 
